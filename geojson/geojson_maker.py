@@ -115,7 +115,7 @@ def make_point_features(db_path, product_id, uf=None):
 
 
 
-def make_geojson(db_path, feedstock_id, region_type, year, product_id=None, uf=None, consumer_centers=True):
+def make_geojson(db_path, feedstock_id, region_type, year, product_id=None, uf=None, consumer_centers=False):
     poly_features = make_poly_features(db_path, feedstock_id, region_type, year, uf)
     if consumer_centers:
         features = poly_features + make_point_features(db_path, product_id, uf)
@@ -123,3 +123,4 @@ def make_geojson(db_path, feedstock_id, region_type, year, product_id=None, uf=N
         features = poly_features
 
     return {"type":"FeatureCollection", "features": features}
+
