@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="{{ url_for('static', filename='first.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+</head>
+<body>
+    <div id="main_div">
+        <div id="options_div">
+            <div class="selectbox">
+                <label for="feedstock_selectbox">Matéria-prima:</label>
+                <select name="feedstock" id="feedstock_selectbox" onchange="feedstock_changed()"></select>
+            </div>
+        
+
+            <div class="selectbox">
+                <label for="year_selectbox">Ano:</label>
+                <select name="year" id="year_selectbox"></select>
+            </div>
+
+            <div class="selectbox">
+                <label for="region_type_selectbox">Tipo Região:</label>
+                <select name="region_type" id="region_type_selectbox"></select>
+            </div>
+            
+            <button onclick="update_map()">Update map</button>
+        </div>
+        <div id="map_div"></div>
+    </div>
+
+    <script>
+        fill_feedstock_selectbox()
+        fill_region_type_selectbox()
+    </script>
+</body>
+</html>
