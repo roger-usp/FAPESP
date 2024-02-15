@@ -10,7 +10,8 @@
         "South West",
         "Wales",
         "West Midlands",
-        "Yorkshire and The Humber"
+        "Yorkshire and The Humber",
+        "Northern Ireland"
     ],
     "Manure potential (GWh/year)": [
         819.9786486150799,
@@ -23,7 +24,8 @@
         2923.44052224348,
         2726.987127376,
         1390.47869657544,
-        1550.83435885908
+        1550.83435885908,
+        0.0
     ],
     "Food Waste potential (GWh/year)": [
         153.40467999999998,
@@ -36,6 +38,7 @@
         52.58915999999999,
         63.40828,
         243.05268,
-        52.54964
+        52.54964,
+        0.0
     ]
 }
