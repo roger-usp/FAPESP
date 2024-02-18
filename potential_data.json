@@ -13,7 +13,7 @@
         "Yorkshire and The Humber",
         "Northern Ireland"
     ],
-    "Manure potential (GWh/year)": [
+    "Manure potential [GWh/year]": [
     1349.385283,
     1102.391311,
     0.0,
@@ -27,7 +27,7 @@
     2004.715789,
     0.0
 ],
-    "Food Waste potential (GWh/year)": [
+    "Food Waste potential [GWh/year]": [
         153.40467999999998,
         37.68076,
         553.9617199999999,
@@ -42,7 +42,7 @@
         0.0
     ],
 
-"Crop potential (GWh/year)": [
+"Crop potential (currently processed) [GWh/year]": [
   376.1486954193302,
   276.4811530801296,
   0.0,
@@ -57,7 +57,7 @@
   191.2623829821724
    ],
 
-"Crop Waste potential (GWh/year)": [
+"Crop Waste potential (currently processed) [GWh/year]": [
   69.49005651359052,
   57.13684020023203,
   0.0,
